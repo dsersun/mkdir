@@ -1,19 +1,5 @@
-goto start
---------------------------------------
-Этот пакетный файл предназначен
-для автоматизации создания структуры
-папок / файлов кредитного досье,
-а также для создания другого пакетного файла
-для автоматизации архивирования досье,
-для последующей заливки в приложение в скоринг систему
---------------------------------------
-Пакетный файл написан 01/16/2022
-Последнее исправление внесено 01/16/2022
---------------------------------------
-:start
-
 @echo off
-:: создание структыры папок
+:: создание структуры папок
 MD ClientName_Suma_Valuta
 MD ClientName_Suma_Valuta\"1. Solicitare Aprobare"
 MD ClientName_Suma_Valuta\"1. Solicitare Aprobare"\Cadastru
@@ -32,9 +18,8 @@ MD ClientName_Suma_Valuta\"8. Eliberare, Monitoring"\"Contracte semnate"\"Inregi
 MD ClientName_Suma_Valuta\"8. Eliberare, Monitoring"\"Tragere credit"
 MD ClientName_Suma_Valuta\"8. Eliberare, Monitoring"\Monitoring
 MD ClientName_Suma_Valuta\"__ Other __"
-:: Создание LOG файла
+:: Создание LOG файла (На будущее)
 copy nul > ClientName_Suma_Valuta\"__ Other __"\log.txt
-
 echo Structura dosarului creata !!!
 
 :: Создание Bat файла с командами для архивации
@@ -52,6 +37,6 @@ echo.start WinRAR -r a  Arhiva\"8. Eliberare, Monitoring.rar" "8. Eliberare, Mon
 echo.echo Arhivarea efectuata cu succes
 echo.pause
 ) >  ClientName_Suma_Valuta\arhivare.bat
-
 echo Fisier pentru arhivere a fost create cu succes !!!
+
 pause
