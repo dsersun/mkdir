@@ -34,9 +34,11 @@ echo.start WinRAR -r a  Arhiva\"5. Sursa Secundara.rar" "5. Sursa Secundara"
 echo.start WinRAR -r a  Arhiva\"6. Scop Credit.rar" "6. Scop Credit"
 echo.start WinRAR -r a  Arhiva\"7. Fotografii.rar" "7. Fotografii"
 echo.start WinRAR -r a  Arhiva\"8. Eliberare, Monitoring.rar" "8. Eliberare, Monitoring"
+echo.@echo off
+echo.cls
 echo.echo Arhivarea efectuata cu succes
 echo.pause
 ) >  ClientName_Suma_Valuta\arhivare.bat
+@echo off
 echo Fisier pentru arhivere a fost create cu succes !!!
-
 pause
